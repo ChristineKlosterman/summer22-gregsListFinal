@@ -29,3 +29,18 @@ VALUES
 
 -- GET ALL CARS
 SELECT * FROM cars;
+
+CREATE TABLE houses(
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  imgUrl VARCHAR(255) NOT NULL,
+  price INT NOT NULL DEFAULT 0, 
+)
+
+DROP TABLE houses;
+
+INSERT INTO houses
+(imgUrl, price)
+VALUES 
+("https://imageio.forbes.com/blogs-images/dennismersereau/files/2017/03/C8GOcZ7VYAEAFbc-1200x900.jpg?format=jpg&width=960", 300000)
+
+SELECT * FROM houses;
